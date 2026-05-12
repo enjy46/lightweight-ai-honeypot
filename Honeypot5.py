@@ -100,7 +100,7 @@ def start_honeypot_decoys():
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "malware_detector_model.pkl")
 DOWNLOADS_DIR = os.path.join(BASE_DIR, "monitored")
-VIRUSTOTAL_API_KEY = '4b44e247f2637e218caae551270820cebee1e789699c608b1d00058137144403'  # Replace with your actual key
+VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY")  # Replace with your actual key
 
 # Thresholds
 #If the ICMP ≥ 10 ICMP requests,  will be flagged as possible ICMP flood attack. Used for ping + too many = possible flood attack (DOS)
