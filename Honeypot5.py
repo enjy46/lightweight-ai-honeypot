@@ -98,7 +98,7 @@ def start_honeypot_decoys():
 
 # Configuration
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "malware_detector_model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "malware_detector_model_final.pkl")
 DOWNLOADS_DIR = os.path.join(BASE_DIR, "monitored")
 VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY")  # Replace with your actual key
 
